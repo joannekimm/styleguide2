@@ -1,0 +1,63 @@
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  display: block;
+  float: left;
+  padding: 2rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+  
+li a {
+  color: black;
+  padding: 1em;
+}
+
+li:hover,
+li:focus-within {
+  background:rgba(84,115,112, 0.3);
+}
+
+li:focus-within a {
+  outline: none;
+}
+
+ul li ul {
+  background: white;
+  color: white;
+  visibility: hidden;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 2.5em;
+  text-align: center;
+  left:0;
+  display: none;
+  font-size: 0.8em;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+   visibility: visible;
+   display: block;
+}
+
+ul li:hover {
+  color:white;
+
+}
+
+ul li ul li {
+  width: 73.5%;
+}
+
